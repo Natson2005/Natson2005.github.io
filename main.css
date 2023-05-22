@@ -1,7 +1,23 @@
+
 .subheading {
   font-weight: 600;
 }
 
 .date {
   min-width: 18rem;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(247,245,246);
+  background: radial-gradient(circle, rgba(247,245,246,1) 0%, rgba(146,148,149,1) 100%);
+}
+
+.logo {
+  display: flex;
+  place-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  justify-content: space-between;
+  
 }
