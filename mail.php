@@ -2,9 +2,7 @@
 $to = "natansonoga2@gmail.com";
 if (isset($_POST['submit'])) {
   $from = $_POST['email'];
-  $meno = $_POST['first_name'];
-  $priezvisko = $_POST['last_name'];
-  $subject = "Odosielateľ:" . $first_name ." " . $last_name . " (" . $from . ")";
+  $subject = "Odosielateľ:" . $from;
   $message = $_POST['message'];
 
 

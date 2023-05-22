@@ -112,7 +112,7 @@ function handleSubmit(event) {
   const alertTrigger = document.getElementById('liveAlertBtn')
   if (alertTrigger) {
     alertTrigger.addEventListener('click', () => {
-      appendAlert('Nice, you triggered this alert message!', 'success')
+      appendAlert('Email bol odoslaný úspešne!', 'success')
     })
   }
   // js-docs-end live-alert
