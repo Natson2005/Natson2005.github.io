@@ -11,6 +11,8 @@ body {
   padding: 0;
   background-image: radial-gradient(circle, rgba(247,245,246,1) 0%, rgba(146,148,149,1) 100%);
 }
+
+
 /* ///.....Skill Bar....../// */
 
 .skills-bar {
@@ -34,7 +36,6 @@ body {
 .skills-bar .bar .progress-line {
   position: relative;
   height: 10px;
-  width: 550px;
   background: #f0f0f0;
   border-radius: 10px;
   transform: scaleX(0);
@@ -69,7 +70,14 @@ body {
 .progress-line .javascript {
   width: 60%;
 }
-
+.progress-line .office {
+  width: 80%;
+}
+.progress-line .anj {
+  width: 75%;
+}.progress-line .nem {
+  width: 50%;
+}
 .bar .progress-line span::before {
   position: absolute;
   content: "";
@@ -108,4 +116,13 @@ body {
 .progress-line .javascript::after {
   content: "60%";
 }
+.progress-line .office::after {
+  content: "80%";
+}
 
+.progress-line .nem::after {
+  content: "A2";
+}
+.progress-line .anj::after {
+  content: "B2";
+}
