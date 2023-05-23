@@ -1,7 +1,3 @@
-<!-- <?php
-require("mail.php")
-?> -->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,15 +9,70 @@ require("mail.php")
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
   <link rel="stylesheet" href="main.css">
 </head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  .container {
+
+    margin: 0 auto;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  form {
+    color: black;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+
+  textarea {
+    resize: vertical;
+    height: 120px;
+  }
+
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+</style>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
   <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
-    <a class="navbar-brand" href="#">Životopis</a>    
+    <a class="navbar-brand" href="#">
+      <img src="img/logo.png" class="img-fluid " style="width:50px" alt="...">
+      Životopis</a>
     <button class="navbar-toggler btn-dark" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon btn"></span>
     </button>
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
       <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link" href="#about">O mne</a>
@@ -48,86 +99,132 @@ require("mail.php")
   <div class="container">
 
     <section class="container mt-50" id="about">
-      <br><br><br>
-      <div class="card mb-3" style="max-width: 540px;">
-        <div class="row g-0 text-dark">
-          <div class="col-md-4 align-center">
-            <img src="img/logo.png" class="img-fluid rounded-start" alt="...">
+      <br><br><br><br>
+      <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-md-2 img-fluid">
+            <img src="" alt="">
           </div>
-          <div class="col-md-8">
-            <div class="card-body">
+          <div class="col-md-9 justify-content-center">
+            <div class="card-body text-dark text-center">
               <h5 class="card-title">O mne</h5>
-              <p class="card-text">          Dobrý deň volám sa Nátan Sonoga, mám 17 rokov, chodím do 2.ročníka v odbore Inteligentné technológie na Súkromnej strednej odbornej škole Ul.29. Augusta v Poprade.
-                Študujem predmety ako napríklad programovanie, počítačové siete a dizajn digitálnych sietí. Síce som sa programovaniu pred
-                strednou školou nevenoval, po nástupe na školu ma to hneď začalo baviť a celkom som sa v tom zlepšil.   
-      </p>
-      <div>
-        <h1>Kontaktné info</h1>
-        <div class="subheading">
-          3370/21 ulica Letná · Poprad, PP 05801 · (+421) 948-073-634 · natansonoga2@gmail.com
-      </div>
+              <p class="card-text">Dobrý deň volám sa Nátan Sonoga, mám 17 rokov, chodím do 2.ročníka v odbore
+                Inteligentné technológie na Súkromnej strednej odbornej škole Ul.29. Augusta v Poprade.
+                Študujem predmety ako napríklad programovanie, počítačové siete a dizajn digitálnych sietí. Medzi moje obľúbené predmety patrí matematika a fyzika.
+                Vo vľnom čase hrám videohry, chodím na volejbal a šipky.
+              </p>
             </div>
           </div>
         </div>
       </div>
-
+      <br>
+      <div class="row">
+        <div class="card text-dark col-md-6 text-center">
+          <h1>Kontaktné info</h1>
+          <div class="subheading">
+            · 3370/21 ulica Letná <br> · Poprad, PP 05801 <br> · (+421) 948-073-634 <br> · natansonoga2@gmail.com
+          </div>
+        </div>
+        <div class="card text-dark col-md-6 text-center">
+          <h1>Kontaktné info</h1>
+          <div class="subheading">
+            · 3370/21 ulica Letná <br> · Poprad, PP 05801 <br> · (+421) 948-073-634 <br> · natansonoga2@gmail.com
+          </div>
+        </div>
+      </div>
     </section>
-
-    <section id="experience">
+<br><br>
+    <section id="experience" class="text-dark">
       <h2>Skúsenosti</h2>
-      <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
+      <div class="card container justify-content-between mb-3">
         <div>
           <h5>CoraGeo</h5>
           <div class="subheading">Odborná prax</div>
           <p>
             V 2. som išiel na odbornú prax doi firmy CoraGeo v Poprade, kde som prehĺbilsvoje vedomosti z
-            oblasti programovania a pracovania s dátami.Prax trvala 5 dní a jednou s úloh bolo aj vytvorenie tejto stránky. 
+            oblasti programovania a pracovania s dátami.Prax trvala 5 dní a jednou s úloh bolo aj vytvorenie tejto
+            stránky.
           </p>
         </div>
         <div class="date text-md-right">Máj 2023</div>
       </div>
-   
+
     </section>
 
-    <section id="education">
+    <section id="education" class="text-dark">
       <h2>Vzdelanie</h2>
-      
-        <img src="img/ssosta.jpg" width="50%" class="card-img" alt="...">
-        
-          <p class="card-text">        Študujem na Súkromnej strednej odbornej škole ul. 29 Augusta v Poprade, kde študujem odbor
-            Inteligentné technológie. V rámci tohto odboru študujem programovanie(Python,PHP,), počítačové site (konfigurácia a údržba sietí) a 
-            Diyajn digitálnych médií(HTML a CSS). Plánujem doštudovať a aj zmaturovať z týchto predmetov a potom sa im aj neskôr venovať.
-        </p>
+      <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-md-5 img-fluid">
+            <img src="img/ssosta.jpg" width="50%" class="card-img" alt="...">
+          </div>
+          <div class="col-md-7 justify-content-center">
+            <div class="card-body text-dark text-center">
+              <p class="card-text"> Študujem na Súkromnej strednej odbornej škole ul. 29 Augusta v Poprade, kde študujem odbor
+                Inteligentné technológie. V rámci tohto odboru študujem programovanie(Python,PHP,), počítačové site
+                (konfigurácia a údržba sietí) a
+                Diyajn digitálnych médií(HTML a CSS). Plánujem doštudovať a aj zmaturovať z týchto predmetov a potom sa im aj
+                neskôr venovať.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section> <br>
 
-    <section id="skills">
+
+    <section id="skills" class="text-dark">
       <h2>Schopnosti</h2>
-      <p>
-        
-      </p>
+            <div class="skills-bar">
+              <div class="bar">
+                <div class="info">
+                  <span>HTML</span>
+                </div>
+                <div class="progress-line"><span class="html"></span></div>
+                <div class="bar">
+                  <div class="info">
+                    <span>CSS</span>
+                  </div>
+                  <div class="progress-line"><span class="css"></span></div>
+                  <div class="bar">
+                    <div class="info">
+                      <span>BOOTSTRAP</span>
+                    </div>
+                    <div class="progress-line"><span class="bootstrap"></span></div>
+                    <div class="bar">
+                      <div class="info">
+                        <span>JAVASCRIPT</span>
+                      </div>
+                      <div class="progress-line"><span class="javascript"></span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="text-dark">
       <h2>Záujmi</h2>
-      
+
       <p>
-        Vo voľnom čase hrávam volejbal a šipky v škole. Rád hrám videohry, čítam dobrodružnú a sci-fi literatúru. Občas kreslím. 
+        Vo voľnom čase hrávam volejbal a šipky v škole. Rád hrám videohry, čítam dobrodružnú a sci-fi literatúru. Občas
+        kreslím.
       </p>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="text-dark">
       <h2>Kontakt</h2>
-      <form method="post">
-        <div class="form-group">
-          <label for="email">Email:</label>
-          <input type="email" class="form-control" id="email" name="email" required>
-        </div>
-        <div class="form-group">
-          <label for="msg">Message:</label>
-          <textarea class="form-control" rows="5" id="msg" name="message"></textarea>
-        </div>
-        <div id="liveAlertPlaceholder"></div>
-        <button type="submit" class="-center btn btn-dark" id="liveAlertBtn">Submit</button>
+      <form action="send_email.php" method="post">
+        <label for="name">Meno a Priezvisko:</label>
+        <input type="text" name="name" id="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required><br><br>
+
+        <label for="message">Správa:</label><br>
+        <textarea name="message" id="message" rows="5" cols="30" required></textarea><br><br>
+
+        <input type="submit" value="Odoslať">
       </form>
     </section>
     <br>
