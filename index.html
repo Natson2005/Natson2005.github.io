@@ -102,7 +102,7 @@
       <br><br><br><br>
       <div class="row">
         <div class="col-md-6">
-          <img src="img/P8084673.jpg" class="img-fluid" alt="">
+          <img src="img/P8084673.jpg" class="img-fluid rounded" alt="">
         </div>
           <div class="card col-md-6 justify-content-center">
             <div class="card-body text-dark text-center">
@@ -229,17 +229,14 @@
       </div>
     </section>
     <br>
-    <section id="contact" class="text-dark">
+    <section id="contact">
       <h2>Kontakt</h2>
-      <form action="send_email.php" method="post">
-        <label for="name">Meno a Priezvisko:</label>
-        <input type="text" name="name" id="name" required><br><br>
-
+      <form method="post">
         <label for="email">Email:</label>
         <input type="email" name="email" id="email" required><br><br>
 
         <label for="message">Správa:</label><br>
-        <textarea name="message" id="message" rows="5" cols="30" required></textarea><br><br>
+        <textarea name="msg" id="msg" rows="4" cols="30" required></textarea><br><br>
 
         <input type="submit" value="Odoslať">
       </form>
