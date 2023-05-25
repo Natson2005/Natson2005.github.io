@@ -10,6 +10,11 @@
   <link rel="stylesheet" href="main.css">
 </head>
 <style>
+  h1,
+  h2 {
+    text-align: center;
+  }
+
   body {
     font-family: Arial, sans-serif;
   }
@@ -48,7 +53,8 @@
     resize: vertical;
     height: 120px;
   }
-  .card-body{
+
+  .card-body {
     flex: none;
   }
 
@@ -69,7 +75,7 @@
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
   <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
-    <a class="navbar-brand" href="login/index.php">
+    <a class="navbar-brand" href="">
       <img src="img/logo.png" class="img-fluid " style="width:50px" alt="...">
       Životopis</a>
     <button class="navbar-toggler btn-dark" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -222,25 +228,25 @@
     <br>
     <section id="interests" class="text-dark">
       <h2>Záujmy</h2>
-      <div class="card">
+      <div class="card p-4">
         <div class="row">
           <div class="col-2 text-center">
-            <img src="img/art.png" class="img-fluid" alt="">Kreslenie
+            <img src="img/art.png" class="img-fluid" alt="">
           </div>
           <div class="col-2 text-center">
-            <img src="img/flute (1).png" class="img-fluid card-img" alt="">flauta
+            <img src="img/flute (1).png" class="img-fluid card-img" alt="">
           </div>
           <div class="col-2 text-center">
-            <img src="img/volleyball.png" class="img-fluid" alt="">Volejbal
+            <img src="img/volleyball.png" class="img-fluid" alt="">
           </div>
           <div class="col-2 text-center">
-            <img src="img/savannah.png" class="img-fluid" alt="">Túry a kempovanie
+            <img src="img/savannah.png" class="img-fluid" alt=""> 
           </div>
           <div class="col-2 text-center">
-            <img src="img/console.png" class="img-fluid" alt="">Videohry
+            <img src="img/console.png" class="img-fluid" alt="">
           </div>
           <div class="col-2 text-center">
-            <img src="img/illustration.png" class="img-fluid" alt="">Dizajn
+            <img src="img/illustration.png" class="img-fluid" alt="">
           </div>
         </div>
       </div>
@@ -254,16 +260,19 @@
 
             <form method="post">
               <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="E-mailova adresa" aria-label="Username"
-                  id="email" name="email">
+                <input type="text" class="form-control" placeholder="E-mailova adresa" aria-label="Username" id="email"
+                  name="email">
               </div> <br>
               <div class="input-group">
                 <span class="input-group-text">Správa</span>
-                <textarea class="form-control" aria-label="With textarea" placeholder="Tu napíšte vašu správu"
-                  id="msg" name="msg"></textarea>
+                <textarea class="form-control" aria-label="With textarea" placeholder="Tu napíšte vašu správu" id="msg"
+                  name="msg"></textarea>
               </div> <br>
+              <label for="captcha-answer">Anti-Spam: Koľko je 2 + 3?</label>
+              <input type="number" id="captcha-answer" name="captcha-answer" required>
+              <br>  <br>
               <button id="submit" type="submit" class="btn btn-dark mb-2" name="submit">Odoslať</button> <br>
-            </form><br>
+            </form><br> 
             <footer>
               <h6 class="text-center">Vytvoril Nátan Sonoga, 2023</h6>
             </footer>
