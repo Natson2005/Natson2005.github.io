@@ -1,6 +1,3 @@
-<?php
-require("login/email.php")
-  ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -50,6 +47,9 @@ require("login/email.php")
   textarea {
     resize: vertical;
     height: 120px;
+  }
+  .card-body{
+    flex: none;
   }
 
   input[type="submit"] {
@@ -108,7 +108,7 @@ require("login/email.php")
           <img src="img/P8084673.jpg" class="img-fluid rounded" alt="">
         </div>
         <div class="card col-md-6 justify-content-center">
-          <div class="card-body text-dark text-center">
+          <div class="card-body text-dark text-center ">
             <h5 class="card-title">O mne</h5>
             <p class="card-text">Dobrý deň volám sa Nátan Sonoga, mám 17 rokov, chodím do 2.ročníka v odbore
               Inteligentné technológie na Súkromnej strednej odbornej škole Ul.29. Augusta v Poprade.
@@ -254,21 +254,15 @@ require("login/email.php")
 
             <form method="post">
               <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Meno" aria-label="Username" name="first_name">
-              </div>
-              <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Priezvisko" aria-label="Username" name="last_name">
-              </div>
-              <div class="input-group mb-3">
                 <input type="text" class="form-control" placeholder="E-mailova adresa" aria-label="Username"
-                  name="email">
+                  id="email" name="email">
               </div> <br>
               <div class="input-group">
                 <span class="input-group-text">Správa</span>
                 <textarea class="form-control" aria-label="With textarea" placeholder="Tu napíšte vašu správu"
-                  name="message"></textarea>
+                  id="msg" name="msg"></textarea>
               </div> <br>
-              <button type="submit" class="btn btn-dark mb-2" name="submit">Odoslať</button> <br>
+              <button id="submit" type="submit" class="btn btn-dark mb-2" name="submit">Odoslať</button> <br>
             </form><br>
             <footer>
               <h6 class="text-center">Vytvoril Nátan Sonoga, 2023</h6>
