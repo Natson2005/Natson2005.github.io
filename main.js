@@ -15,8 +15,8 @@ async function handleSubmit(event) {
   let data = {
     systemEmail: "natansonoga2@gmail.com",
     contactEmail: $('#email').val(),
-    // message:$('#msg').val()
-    message: ""
+    message:$('#msg').val()
+    //message: ""
   }
 
   let response = await fetch('https://emailsenderitweek.azurewebsites.net/api/ContactForm', {
