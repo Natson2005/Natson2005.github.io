@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Countdowns to upcoming action, fantasy, sci-fi and adventure movies and TV shows, plus what is in cinemas now.">
+  <title>Release Board</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&family=Hanken+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="mast">
+      <div class="brand">Release Board</div>
+      <h1>Action, fantasy, sci-fi and adventure</h1>
+      <p>What is in cinemas now and what opens next, with a live countdown to each premiere.</p>
+      <div class="asof" id="asof"></div>
+    </header>
+
+    <section class="hero" id="hero"></section>
+
+    <div class="controls">
+      <div class="chips" id="kindChips"><span class="lab">Format</span></div>
+      <div class="chips" id="genreChips"><span class="lab">Genre</span></div>
+      <div class="chips"><label class="lab" for="q">Search</label><input class="search" id="q" type="search" placeholder="Title" autocomplete="off"></div>
+      <div class="count" id="count"></div>
+    </div>
+
+    <section class="section" id="nowSec" hidden>
+      <div class="sec-head"><h2>In cinemas now</h2><span id="nowN"></span></div>
+      <ul class="rows" id="nowRows"></ul>
+    </section>
+
+    <section class="section" id="soonSec">
+      <div class="sec-head"><h2>Coming soon</h2><span>Countdown to 00:00 on the release date, your local time</span></div>
+      <div id="soonBody"></div>
+    </section>
+
+    <footer>
+      <p>Dates are for the US or global release and can move. Titles that open the same day as another big release are marked.</p>
+      <div class="src">
+        <span>Sources:</span>
+        <a href="https://www.boxofficemojo.com/calendar/" target="_blank" rel="noopener">Box Office Mojo</a>
+        <a href="https://www.movieinsider.com/movies/2027" target="_blank" rel="noopener">Movie Insider</a>
+        <a href="https://www.cinemablend.com/movies/upcoming-2027-movies-new-release-dates-theaters-streaming" target="_blank" rel="noopener">CinemaBlend</a>
+        <a href="https://au.variety.com/2026/film/news/greta-gerwig-narnia-netflix-release-date-36132/" target="_blank" rel="noopener">Variety</a>
+        <a href="https://www.avclub.com/avengers-doomsday-dune-part-three-same-day-release-december-18" target="_blank" rel="noopener">AV Club</a>
+        <a href="https://www.theonering.net/torwp/2026/05/11/121807-rings-of-power-season-3-release-date-confirmed-for-november-11-on-prime-video/" target="_blank" rel="noopener">TheOneRing.net</a>
+        <a href="https://www.tvline.com/2222636/blade-runner-2099-teaser-trailer-release-date-prime-video/" target="_blank" rel="noopener">TVLine</a>
+        <a href="https://9to5mac.com/2026/09/04/silo-season-4-just-got-its-release-date-on-apple-tv-and-first-trailer/" target="_blank" rel="noopener">9to5Mac</a>
+        <a href="https://www.nintendolife.com/news/2026/05/the-live-action-zelda-movie-has-a-new-worldwide-release-date" target="_blank" rel="noopener">Nintendo Life</a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="movies.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
